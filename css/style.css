@@ -1,0 +1,298 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+.navbar-brand { font-size: 1.7rem;
+
+}   
+header{
+    height: 100vh;
+    background-image: url(../imgs/hero-bg.jpg);
+    background-size: cover;
+}
+.navbar{ background-color: rgba(0, 0, 0, .9)!important;z-index: 1000000;
+    }
+
+    nav ul a { 
+          transition: 1s;
+    }  
+  
+
+    nav ul a:hover{ border-bottom:2px solid #fff }
+    
+
+   
+
+
+    .opa {  background-color: rgba(0, 0, 0, .6);
+             color: white;
+            
+            height:100%;
+            text-align: center;
+            overflow: hidden;
+            
+            
+
+            }
+    .opa li { list-style: none;  font-size: 40px;
+         color :white;font-weight: 500;
+          overflow: hidden;line-height: 70px;
+          position: relative;
+          top: 0;
+
+          animation: slide 6.5s steps(4) infinite ;
+        }    
+        .opa ul { overflow: hidden; 
+               position: relative; 
+               margin-top: 30px;
+                height: 50px;} 
+
+    .opa li span  { position: relative;}
+    /*.opa li span::after { 
+        content: "";
+        background-color:#48342B;
+        background: linear-gradient(#251004);
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-left:2px solid white ;
+        animation: dynamic 2s steps(12) infinite ;
+
+    }*/
+    @keyframes dynamic { 
+       0%{
+            left: 0%;
+            margin: 0 -30px;
+        }
+        /* 20%{
+            left: 20%;
+            margin: 0 -30px;
+        } */
+        40%{
+            left: 20%;
+            margin: 0 -30px;
+        }
+        60%{
+            left: 80%;
+            margin: 0 -30px;
+        }
+    }
+        @keyframes slide { 
+            100%{
+                top: -320px;
+                margin: 0 -35px;
+
+            }
+        }
+
+
+    .about-title {position: relative; margin-bottom: 30px;}
+    .about-title::before{
+        content: " ";
+        background-color:#0078FF ;
+        position: absolute;
+        height: 3px;
+        width: 100px;
+        bottom: -12;
+
+    }
+
+    .card {
+        text-align: center;
+     }
+   .service .card .icon { 
+         position: relative;
+        text-align: center;
+        margin: auto;
+        width: 110px;
+        height: 110px;
+        border: #0078FF solid 13px;
+        border-radius: 50%;
+        transition: 0.5s;
+       
+     }
+    .service .card .icon i {
+         position: absolute;
+         top: 18;
+         left: 21;
+         font-size: 40px;
+
+
+     }
+    .service .card:hover .icon { 
+         background-color:#0078FF ;
+         border:#CDE1F8 solid 10px; 
+     }
+
+
+     .serv-title {position: relative; margin-bottom: 40px;}
+     .serv-title::before{
+    content: " ";
+    background-color:#0078FF ;
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    bottom: -12;
+left: 620;
+}
+
+
+/* counter start */
+     .blue { 
+         background-image: url(../imgs/counters-bg.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         position: relative; 
+         height: 50vh;
+
+     }
+     
+     .counter{ 
+         position: relative;
+     }
+
+     .blue .icon { 
+        position: relative;
+       text-align: center;
+       margin: auto;
+       width: 100px;
+       height: 100px;
+       border:#CDE1F8 solid 10px; 
+       border-radius: 50%;
+      
+    }
+   .blue .card{
+    background-color: transparent;
+     z-index: 100;
+     border-style: hidden;
+    }
+    .blue .icon i {
+        position: absolute;
+        top: 18;
+        left: 23;
+        font-size: 40px;
+        color: #fff;        
+
+
+    }
+     .blue .card h5 , .blue .card p { color: #fff;}
+    
+
+     /* start portfolio */
+    .projects { overflow: hidden;}
+
+     .work-img { 
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: 80%;
+        
+      }
+
+      .portfolio img {
+           width: 100%; 
+           height: 100%;
+           transition: 1s;
+            
+            }
+
+    .portfolio .card:hover img { 
+        transform: scale(1.25);
+    }
+
+        /* end counter section  */
+
+        /* start slider  */
+        .slider{ 
+            background-image: url(../imgs/overlay-bg.jpg);
+          
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative; 
+            height: 70vh;
+           
+
+        }
+        .slider .container { position: absolute;z-index: 100;}
+.BOX-img img {  border-radius: 50%; color: #fff;} 
+
+/* end slider  */
+/* start blog  */
+.card-footer img { width: 32px; height: 32px; border-radius: 50%;}
+
+
+
+.blog-title {position: relative; margin-bottom: 40px;}
+.blog-title::before{
+    content: " ";
+    background-color:#0078FF ;
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    bottom: -12;
+left: 620;
+}
+
+
+
+
+
+/* end blog  */
+
+/* start form  */
+.sendUs {position: relative; margin-bottom: 40px;}
+
+.sendUs::before  { 
+    content: " ";
+    position: absolute;
+    background-color: #0078FF;
+    height: 4px;
+    width: 80px;
+    bottom: -12;
+    left:0 ;    
+    }
+
+.getto {position: relative; margin-bottom: 40px;}
+.getto::before  { 
+    content: " ";
+    position: absolute;
+    background-color: #0078FF;
+    height: 4px;
+    width: 80px;
+    bottom: -12;
+    left:0 ;    
+    }
+
+/* end form  */
+
+.social { 
+    width: 50px;
+    height: 50px;
+    position: relative;
+  
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: #0078FF 3px solid;
+}
+.form { background-image: url(../imgs/overlay-bg.jpg);
+    background-attachment: fixed;    
+}
+
+.social  i {
+    position: absolute;
+    top: 15;
+    left: 15;}
+
+    .social:hover{background-color: #0078FF;border:3px solid gray ; } 
+
+.container { z-index: 1000;}
+
+
+
+
+
+
